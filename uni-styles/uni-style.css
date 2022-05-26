@@ -1,0 +1,386 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  position: relative;
+  
+}
+.banner-image{
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  
+}
+.logo-container{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.logo-image{
+  width: 200px;
+  height: 50px;
+}
+.nav-container{
+  display: flex;
+ text-align: left;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 290px;
+  z-index: ;
+ 
+}
+@media screen and (max-width: 700px) {
+  .logo-image{
+    width: 150px;
+  }
+  
+}
+
+.nav-content{
+  font-family: sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  padding-right: 12px;
+  color: white;
+  font-size: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.nav-content:hover{
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2.5px;
+}
+@media screen and (max-width: 700px) {
+  .nav-container{
+    width: 50px;
+    display: block;
+  }
+  .logo-image{
+    width: 150px;
+    display: block;
+  }
+}
+.write-up-container{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40%;
+  bottom: 60%;
+  align-items: center;
+  left: 25%;
+  right: 25%;
+}
+.world-biggest{
+  font-family: sans-serif;
+  font-size: 20px;
+  color: rgb(29, 28, 28);
+  text-align: center;
+}
+.making-website{
+  font-family: sans-serif;
+  padding:4px;
+  color: black;
+  font-size: 17px;
+  width: 700px;
+  text-align: center;
+}
+ 
+@media screen and (max-width: 700px) {
+  .world-biggest{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+}
+@media screen and (max-width: 700px) {
+  .making-website{
+    width: 270px;
+    font-size: 15px;
+  text-align: center;
+
+  }
+}
+
+.visit-button{
+  height: 40px;
+  width: 190px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.visit-button:hover{
+  background:black;
+  color: white;
+}
+.course{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  font-family: sans-serif;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col{
+  flex-basis: 31%;
+  background-color: #edcece;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+  padding: 20px 12px;
+  transition: 0.5s;
+}
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+.course-h1{
+  font-size: 36px;
+  font-weight: 600px;
+}
+p{
+  color: #777;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+padding: 1px;
+}
+
+@media screen and (max-width: 700px) {
+  .row{
+    flex-direction: column;
+  }
+}
+
+.campus{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  font-family: sans-serif;
+}
+.campus-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img{
+  width: 100%;
+  display: block;
+}
+.layer{
+  margin-top: 0%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  transition: 0.5s;
+}
+.layer:hover{
+  background: rgba(226, 0, 0, 0.7);
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  bottom: 0;
+  left: 50%;
+  font-size: 26px;
+  position: absolute;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{
+  opacity: 1;
+  bottom: 49%;
+}
+
+.facilities{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+ 
+}
+.facilities-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.facilities-col p{
+  padding: 0%;
+  font-family: sans-serif;
+}
+.facilities-col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+/*testimonies*/
+.testimonies{
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.testimonies-col{
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  background: #f1f0f0;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+  margin-right: 10px;
+
+  
+}
+
+.testimonies-col img{
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.testimonies-col p{
+  padding: 0%;
+  margin-top: 0%;
+}
+.testimonies-col h3{
+  margin-top: 15px;
+}
+
+/*----------Call to action----------*/
+.cta{
+  margin: 20px auto;
+  text-align: center;
+  padding: 100px 0;
+  display: flex;
+ 
+}
+.banner2-div{
+  position: relative;
+}
+.banner2{
+  width: 80%;
+  background-position: center;
+  background-size: cover;
+}
+.enroll{
+  position: absolute;
+  bottom: 200px;
+  left: 20%;
+}
+
+@media screen and (max-width: 700px) {
+  .enroll{
+    display: block;
+    position: absolute;
+    top: -7px;
+    right: 20px;
+    
+  }
+}
+.cta h1{
+  font-family: sans-serif;
+  width: 800px;
+  font-size: 40px;
+  color: rgb(151, 8, 8);
+}
+@media screen and (max-width: 700px) {
+  .cta h1{
+    width: 270px;
+    font-size: 20px;
+  }
+}
+.contact{
+  position: absolute;
+  left: 45%;
+  bottom: 120px;
+}
+@media screen and (max-width: 700px) {
+  .contact{
+    position: absolute;
+    bottom: 20px;
+    left: 33%;
+  }
+}
+.contact-info{
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: rgb(168, 20, 20);
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+@media screen and (max-width: 700px) {
+  .contact-info{
+    padding: 5px 10px;
+  }
+}
+.contact-info:hover{
+  background-color:transparent;
+}
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.footer p{
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.icons{
+ margin-right: 20px;
+  cursor: pointer;
+  
+}
+.icons:hover{
+
+}
+@media screen and (max-width: 700px) {
+ .material-icons{
+  font-size: 200pxx;
+  }
+}
